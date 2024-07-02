@@ -32,7 +32,7 @@ export const Banner = () => {
             setLoopNum(loopNum + 1);
             setDelta(500);
         }
-    }, [loopNum, isDeleting, text]);
+    }, [loopNum, isDeleting, text, toRotate]); // Include toRotate in the dependency array
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -40,7 +40,7 @@ export const Banner = () => {
         }, delta);
 
         return () => { clearInterval(ticker); };
-    }, [tick, delta]); // Add tick and delta as dependencies
+    }, [tick, delta]);
 
     return (
         <section className="banner" id="home">
