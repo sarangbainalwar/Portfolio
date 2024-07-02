@@ -38,35 +38,35 @@ const Skills = () => {
                         <p>With a diverse skill set spanning both frontend and backend technologies, I bring a dynamic approach to web development. Proficient in C coding, Python, and Django, I specialize in crafting robust and scalable solutions that meet the unique needs of each project. On the frontend, I excel in HTML, CSS, and JavaScript, transforming designs into intuitive and engaging user interfaces. My expertise extends to ReactJS, where I leverage this powerful JavaScript framework to build dynamic and responsive web applications. Committed to prompt engineering, I prioritize efficiency and quality in every project, ensuring timely delivery and client satisfaction.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" />
                                 <h5>Frontend(HTML, CSS, JavaScript)</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="" />
                                 <h5>JS Framework(ReactJS)</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter3} alt="" />
                                 <h5>NodeJS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" />
                                 <h5>ExpressJS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="" />
                                 <h5>JQuery</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="" />
                                 <h5>TailwindCSS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="" />
                                 <h5>Amazon Web Services</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="" />
                                 <h5>DSA in JAVA</h5>
                             </div>
                         </Carousel>
@@ -74,7 +74,7 @@ const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   )
 };
