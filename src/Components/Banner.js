@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { useState, useEffect } from "react"; 
 import { ArrowRightCircle } from "react-bootstrap-icons" 
 import headerImg from '../assets/img/header-img.svg';
-import { toBeInTheDOM } from "@testing-library/jest-dom/dist/matchers";
+// import { toBeInTheDOM } from "@testing-library/jest-dom/dist/matchers";
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () =>{

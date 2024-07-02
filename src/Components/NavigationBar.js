@@ -1,12 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState, useEffect } from 'react'; 
 import logo from '../assets/img/logo-white.png'
 import navIcon1 from '../assets/img/nav-icon1.svg'
-import navIcon2 from '../assets/img/nav-icon2.svg'
-import navIcon3 from '../assets/img/nav-icon3.svg'
+// import navIcon2 from '../assets/img/nav-icon2.svg'
+// import navIcon3 from '../assets/img/nav-icon3.svg'
 import resume from '../assets/img/resume.png'
 import git from '../assets/img/github-mark.svg'
 
