@@ -1,17 +1,18 @@
+import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { useState, useEffect, useCallback } from "react"; 
-import { ArrowRightCircle } from "react-bootstrap-icons"; 
-import headerImg from '../assets/img/header-img.svg';
-// import { toBeInTheDOM } from "@testing-library/jest-dom/dist/matchers";
-import TrackVisibility from "react-on-screen";
+import headerImg from "../assets/img/header-img.svg";
+import { ArrowRightCircle } from 'react-bootstrap-icons';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
-    // const [loopNum, setLoopNum] = useState(0);
-    // const [isDeleting, setIsDeleting] = useState(false);
-    // const toRotate = ["Web Developer"];
-    // const [text, setText] = useState('');
-    // const [delta, setDelta] = useState(300 - Math.random() * 100);
-    // const period = 500;
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const period = 2000;
 
     const tick = useCallback(() => {
         let i = loopNum % toRotate.length;
