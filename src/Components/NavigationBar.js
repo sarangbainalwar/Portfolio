@@ -49,7 +49,7 @@ const NavigationBar = () => {
                         <div className="social-icon">
                             <a href="https://www.linkedin.com/in/sarang-bainalwar-748a1822a/"><img src={navIcon1} alt="" /></a>
                             <a href="https://github.com/sarangbainalwar"><img src={git} alt="" /></a>
-                            <a href="https://drive.google.com/file/d/1anedo7QqGsXiGrgy0q5FzpSP2DXasWPn/view?usp=sharing"><img src={resume} alt="" /></a>
+                            <a href="https://drive.google.com/file/d/1bbnf8u5OJr_lNxCOoCHMoYhaMw8L7Ph8/view?usp=sharing"><img src={resume} alt="" /></a>
                         </div>
                         <button className="vvd" onClick={() => console.log('connect')}> <span>Let's Connect</span> </button>
                     </span>
