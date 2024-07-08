@@ -4,9 +4,9 @@ import { Banner } from './Components/Banner';
 import NavigationBar from './Components/NavigationBar';
 import Skills from './Components/Skills';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Projects from './Components/Projects';
-// import { Footer } from './Components/Footer';
-// import { Contact } from './Components/Contacts';
+import Projects from './Components/Projects';
+import { Footer } from './Components/Footer';
+import { Contact } from './Components/Contacts';
 import { EmailForm } from './Components/EmailForm'
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <NavigationBar />
       <Banner />
       <Skills />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Footer /> */}
       {/* <Contact /> */}
       <EmailForm />
