@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import passXonline from "../assets/img/passxonline.png";
 import SBChatApp from "../assets/img/sbchat.png";
-import projImg3 from "../assets/img/project-img3.png";
+import twjp from "../assets/img/Three-water-jug.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -21,9 +21,9 @@ const Projects = () => {
       imgUrl: SBChatApp,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Three water jug problem",
+      description: "basic frontend UI for three water jug problem",
+      imgUrl: twjp,
     },
   ];
 
