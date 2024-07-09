@@ -14,19 +14,19 @@ const Projects = () => {
       title: "PassXonline",
       description: "Online Password keeper",
       imgUrl: passXonline,
-      goto: <a href="https://passxonline.netlify.app">Click here to visit</a>,
+      goto: "https://passxonline.netlify.app"
     },
     {
       title: "SBChatApp",
       description: "Chatting app based on react-chat-engine",
       imgUrl: SBChatApp,
-      goto: <a href="https://sbchatapp.vercel.app/">Click here to visit</a>
+      goto:"https://sbchatapp.vercel.app/"
     },
     {
       title: "Three water jug problem",
       description: "basic frontend UI for three water jug problem",
       imgUrl: twjp,
-      goto: <a href="https://threewaterjug.vercel.app/">Click here to visit</a>
+      goto:"https://threewaterjug.vercel.app/"
     },
   ];
 
