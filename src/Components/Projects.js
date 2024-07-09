@@ -26,7 +26,7 @@ const Projects = () => {
       title: "Three water jug problem",
       description: "basic frontend UI for three water jug problem",
       imgUrl: twjp,
-      goto:"https://threewaterjug.vercel.app/"
+      goto:"https://three-water-jug-problem-ai.vercel.app/"
     },
   ];
 
