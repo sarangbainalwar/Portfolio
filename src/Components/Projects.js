@@ -4,6 +4,7 @@ import passXonline from "../assets/img/passxonline.png";
 import SBChatApp from "../assets/img/sbchat.png";
 import twjp from "../assets/img/Three-water-jug.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import gan from "../assets/img/GAN.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -27,6 +28,12 @@ const Projects = () => {
       description: "basic frontend UI for three water jug problem",
       imgUrl: twjp,
       goto:"https://three-water-jug-problem-ai.vercel.app/"
+    },
+    {
+      title: "Synthetic Image Generation using GAN",
+      description: "CNN and DCGAN implementation to generate synthetic images",
+      imgUrl: gan,
+      goto:"https://colab.research.google.com/drive/1rn4-zCKUqAhqiUlVwzdzan0lqHqAL8wY?usp=sharing"
     },
   ];
 
