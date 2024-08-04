@@ -10,7 +10,7 @@ import TrackVisibility from 'react-on-screen';
 
 const Projects = () => {
 
-  const projects = [
+  const projectsTab1 = [
     {
       title: "PassXonline",
       description: "Online Password keeper",
@@ -21,20 +21,23 @@ const Projects = () => {
       title: "SBChatApp",
       description: "Chatting app based on react-chat-engine",
       imgUrl: SBChatApp,
-      goto:"https://sbchatapp.vercel.app/"
+      goto: "https://sbchatapp.vercel.app/"
     },
     {
       title: "Three water jug problem",
       description: "basic frontend UI for three water jug problem",
       imgUrl: twjp,
-      goto:"https://three-water-jug-problem-ai.vercel.app/"
-    },
+      goto: "https://three-water-jug-problem-ai.vercel.app/"
+    }
+  ];
+
+  const projectsTab2 = [
     {
       title: "Synthetic Image Generation using GAN",
       description: "CNN and DCGAN implementation to generate synthetic images",
       imgUrl: gan,
-      goto:"https://colab.research.google.com/drive/1rn4-zCKUqAhqiUlVwzdzan0lqHqAL8wY?usp=sharing"
-    },
+      goto: "https://colab.research.google.com/drive/1rn4-zCKUqAhqiUlVwzdzan0lqHqAL8wY?usp=sharing"
+    }
   ];
 
   return (
@@ -44,42 +47,57 @@ const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Here is a list of projects that i have made with the skills that i have learnt through my jouney of Web Development.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>Projects</h2>
+                  <p>Here is a list of projects that I have made with the skills that I have learnt through my journey of Web Development.</p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {
+                            projectsTab1.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
                                 />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {
+                            projectsTab2.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="background"></img>
     </section>
   )
 }
 
 export default Projects;
-
