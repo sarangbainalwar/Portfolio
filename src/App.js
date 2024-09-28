@@ -17,10 +17,10 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
-      { <Footer /> }
       {/* <Contact /> */}
       <EmailForm />
       <Newsletter/>
+      { <Footer /> }
     </div>
   );
 }
