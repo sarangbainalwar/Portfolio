@@ -8,6 +8,7 @@ import Projects from './Components/Projects';
 import { Footer } from './Components/Footer';
 import { Contact } from './Components/Contacts';
 import { EmailForm } from './Components/EmailForm'
+import { Newsletter } from './Components/Newsletter';
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
-      {/* <Footer /> */}
+      { <Footer /> }
       {/* <Contact /> */}
       <EmailForm />
+      <Newsletter/>
     </div>
   );
 }
