@@ -49,22 +49,22 @@ const Skills = () => {
                                 <img src={meter3} alt="" />
                                 <h5>NodeJS</h5>
                             </div>
-                            <div className="item">
+                            {/* <div className="item">
                                 <img src={meter1} alt="" />
                                 <h5>ExpressJS</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="" />
                                 <h5>JQuery</h5>
-                            </div>
+                            </div> */}
                             <div className="item">
                                 <img src={meter2} alt="" />
                                 <h5>TailwindCSS</h5>
                             </div>
-                            <div className="item">
+                            {/* <div className="item">
                                 <img src={meter2} alt="" />
                                 <h5>Amazon Web Services</h5>
-                            </div>
+                            </div> */}
                             <div className="item">
                                 <img src={meter2} alt="" />
                                 <h5>DSA in JAVA</h5>
