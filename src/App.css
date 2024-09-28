@@ -650,3 +650,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
+html {
+  scroll-behavior: smooth;
+}
+.navbar-link.active {
+  font-weight: bold;
+  color: #f39c12;
+  border-bottom: 2px solid #f39c12;
+}
+
